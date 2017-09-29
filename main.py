@@ -16,7 +16,7 @@ def load_input_sentences(file_path: str) -> list:
 def save_output(file_path: str, output: list) -> None:
     with open(file_path, 'w') as file:
         for item in output:
-            file.write('{}\n'.format(item))
+            file.write('{}\t1.0\n'.format(item))
 
 
 def normalize(number: float) -> float:
